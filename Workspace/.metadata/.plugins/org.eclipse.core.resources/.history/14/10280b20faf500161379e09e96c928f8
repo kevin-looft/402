@@ -1,0 +1,45 @@
+package homework5;
+
+
+/*
+ * The Contact class will have 3 properties:
+ * 		firstname   - String
+ * 		lastname    - String
+ * 		homestate   - String
+ * 		age         - Integer
+ */
+
+public class Contact {
+	private String firstName;
+	private String lastName;
+	private String homeState;
+	private Integer age;
+
+	public Contact(String firstName, String lastName, String homeState, Integer age) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.homeState = homeState;
+		this.age = age;
+	}
+	
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public String getHomeState() {
+		return homeState;
+	}
+
+	public Integer getAge() {
+		return age;
+	}
+
+}
+
+
+

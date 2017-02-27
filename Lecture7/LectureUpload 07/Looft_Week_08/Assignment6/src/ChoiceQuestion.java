@@ -1,0 +1,50 @@
+package homework6;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/**
+   A question with multiple choices.
+*/
+public class ChoiceQuestion extends Question {
+   private ArrayList<String> choices;
+//   private int correctAnswerChoice;
+
+   /**
+      Constructs a choice question with no choices.
+   */
+   public ChoiceQuestion() {
+      choices = new ArrayList<String>();
+   }
+
+   /**
+      Adds an answer choice to this question.
+      @param choice the choice to add
+      @param correct true if this is the correct choice, false otherwise
+   */
+   public void addChoice(String choice, boolean correct) {
+      this.choices.add(choice);
+      if (correct) {
+    	  this.setAnswer(choice);
+      }
+   }
+   
+   public void display() {
+      System.out.println(super.text);
+      int i = 1;
+      for (String choice : this.choices) {
+		System.out.println(i + ": " + choice);
+		i++;
+      }
+      System.out.print("Your answer: ");
+      Scanner reader = new Scanner(System.in);
+      try {
+    	int answer = reader.nextInt();
+      	boolean correct = this.checkAnswer(this.choices.get(answer - 1));
+      	System.out.println(correct);
+      } catch(Exception e) {
+   	   System.out.println(e);
+      }
+   }
+}
+

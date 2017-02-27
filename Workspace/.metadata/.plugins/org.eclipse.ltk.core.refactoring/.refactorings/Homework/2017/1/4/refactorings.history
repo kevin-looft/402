@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;b&apos; from expression &apos;new Integer(100) == new Integer(100)&apos;&#x0D;&#x0A;- Original project: &apos;Homework&apos;&#x0D;&#x0A;- Variable name: &apos;b&apos;&#x0D;&#x0A;- Destination method: &apos;test.Exam1.main()&apos;&#x0D;&#x0A;- Variable expression: &apos;new Integer(100) == new Integer(100)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;b&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;test{Exam1.java" name="b" replace="true" selection="274 36" stamp="1485624043298" version="1.0"/>
+</session>

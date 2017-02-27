@@ -1,0 +1,39 @@
+package homework6;
+
+import java.util.ArrayList;
+
+/**
+   A question with multiple choices.
+*/
+public class ChoiceQuestion extends Question {
+   private ArrayList<String> choices;
+   private int correctAnswerChoice;
+
+   /**
+      Constructs a choice question with no choices.
+   */
+   public ChoiceQuestion() {
+      choices = new ArrayList<String>();
+   }
+
+   /**
+      Adds an answer choice to this question.
+      @param choice the choice to add
+      @param correct true if this is the correct choice, false otherwise
+   */
+   public void addChoice(String choice, boolean correct) {
+      this.choices.add(choice);
+      if (correct) {
+    	  this.correctAnswerChoice = this.choices.size();
+      }
+   }
+   
+   public void display() {
+      System.out.println(super.text);
+      for (String choice : this.choices) {
+		System.out.println(choice);
+      }
+       
+   }
+}
+

@@ -1,0 +1,55 @@
+package homework5;
+
+
+import java.util.ArrayList;
+
+public class TestSortOptions {
+
+	public static void main(String[] args) {
+Contact[] contacts = initializeContactsArray();
+        promptForOption(contacts);
+	}
+
+    /*
+     * Data Initialization
+     */
+    
+    private static Contact[] initializeContactsArray() {
+    	Contact contact1 = new Contact("Kevin", "Smith", "IL", 25);
+    	Contact contact2 = new Contact("Bob", "Jordan", "TX", 55);
+    	Contact contact3 = new Contact("Mark", "Jones", "NY", 30);
+    	Contact contact4 = new Contact("Eric", "Roth", "WY", 45);
+    	Contact contact5 = new Contact("Brian", "Howard", "MI", 24);
+    	Contact[] contacts = {contact1, contact2, contact3, contact4, contact5};
+        return contacts;
+    }
+    
+    /*
+     * Prompt for the user to enter their option from the keyboard
+     *
+     * 1 = Sort by last name
+     * 2 = Sort by Home State
+     * 3 = Sort by Age
+     * 0 = End input and exit/terminate the application
+     *
+     */
+    
+    private static void promptForOption(ArrayList<Contact> contacts) {
+        // TODO: Prompt and accept option input
+    }
+
+    /*
+     * Display the Contact information sorted by using the selected option from 
+     * the above "promptForOption" method result
+     */
+    
+    private static void displayContacts(ArrayList<Contact> contacts) {
+        // TODO: Display the contents of the Contacts Array
+    }
+
+}
+
+
+
+
+

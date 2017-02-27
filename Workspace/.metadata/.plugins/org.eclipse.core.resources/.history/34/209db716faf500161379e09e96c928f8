@@ -1,0 +1,17 @@
+package homework5;
+
+
+/*
+ * The Contact class will have 3 properties:
+ * 		firstname   - String
+ * 		lastname    - String
+ * 		homestate   - String
+ * 		age         - Integer
+ */
+
+public class Contact {
+
+}
+
+
+
